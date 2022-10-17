@@ -1,0 +1,16 @@
+<mat-toolbar class="toolbar" color="primary">
+    <div>Parque Regional de Manutenção da 3ª Região Militar</div>
+    <div class="example-button-row">
+      <button class="botao" mat-raised-button routerLink="/">Inicio</button>
+      <button class="botao" mat-raised-button routerLink="/administrador-home">ADM</button>
+      <button class="botao" mat-raised-button routerLink="/administrador-arranchamento">Arranchamento</button>
+      <button class="botao" mat-raised-button routerLink="/relatorio">Relatorio</button>
+      <button class="botao" mat-raised-button [matMenuTriggerFor]="menu">Cadastrar</button>
+      <mat-menu #menu="matMenu">
+        <button class="botao-menu" mat-button routerLink="cadastrar-administrador">Administrador</button>
+        <button class="botao-menu" mat-button routerLink="cadastrar-efetivo">Efetivo</button>
+      </mat-menu>
+      <button class="botao" mat-raised-button routerLink="/">Sair</button>
+    </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

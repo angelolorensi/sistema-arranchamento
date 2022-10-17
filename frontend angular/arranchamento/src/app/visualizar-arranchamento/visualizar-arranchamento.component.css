@@ -1,0 +1,30 @@
+.container-titulo{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container-botao{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.botao{
+  width: 350px;
+  height: 70px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.terceary{
+  background-color: rgb(106, 198, 255);
+}

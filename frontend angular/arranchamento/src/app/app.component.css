@@ -1,0 +1,14 @@
+.toolbar{
+  display: flex;
+  justify-content: space-around;
+}
+
+.botao{
+  margin-left: 10px;
+}
+
+.botao-menu{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}

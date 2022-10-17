@@ -1,0 +1,56 @@
+<div class="logo">
+  <h1 class="mat-display-1 titulo">ARRANCHAMENTO</h1>
+  <div class="logo"><img src="assets\images\pq3_logo_big.png" ></div>
+</div>
+
+<div class="container-card">
+  <mat-card class="card">
+    <mat-card-header class="conteudo-card">
+      <mat-card-title>Arranchamento Individual</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="conteudo-card">
+    <form [formGroup]="formArranchamentoIndividual">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Identidade</mat-label>
+        <input type="number" formControlName="loginArranchamentoIndividual" matInput placeholder="Identidade">
+      </mat-form-field>
+    </form>
+      <button mat-raised-button routerLink="arranchamento-individual">ENTRAR</button>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card">
+    <mat-card-header class="conteudo-card">
+      <mat-card-title>Login Administrador</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="conteudo-card">
+      <form [formGroup]="formArranchamentoAdministrador">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Login</mat-label>
+        <input formControlName="arranchamentoAdministradorLogin" matInput placeholder="Login">
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input formControlName="arranchamentoAdministradorSenha" type="password" matInput placeholder="Senha">
+      </mat-form-field>
+      </form>
+      <button mat-raised-button routerLink="administrador-home">ENTRAR</button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="container">
+  <div class="conteudo-card-botoes">
+  <mat-card>
+      <button mat-button routerLink="visualizar-arranchamento">Visualizar Arranchamento</button>
+  </mat-card>
+  </div>
+</div>
+
+<div class="container">
+  <div class="conteudo-card-botoes">
+  <mat-card>
+      <button mat-button>Cardápio</button>
+  </mat-card>
+  </div>
+</div>
