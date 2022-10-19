@@ -1,6 +1,6 @@
+import { Administrador } from './../model/Administrador';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ArranchamentoService } from './../services/arranchamento.service';
-import { Militar } from './../model/Militar';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -14,14 +14,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class CadastrarAdministradorComponent implements OnInit {
   form: FormGroup;
 
-  efetivo: Observable<Militar[]>;
+  efetivo: Observable<Administrador[]>;
   displayedColumns = [
-    'graduacao',
-    'nomeDeGuerra',
-    'identidade',
-    'numero',
+    'login',
+    'senha',
     'cia',
-    'om',
   ];
 
   constructor(
@@ -31,28 +28,25 @@ export class CadastrarAdministradorComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute
   ) {
-    this.efetivo = this.arranchamentoService.buscarMilitar();
+    this.efetivo = this.arranchamentoService.buscarAdministrador();
     this.form = this.formBuilder.group({
-      identidade: [null],
-      nomeDeGuerra: [null],
-      numero: [null],
-      graduacao: [null],
+      login: [null],
+      senha: [null],
       cia: [null],
-      om: [null],
     });
   }
 
   ngOnInit(): void {}
 
   onSubmit() {
-    this.arranchamentoService.salvarMilitar(this.form.value).subscribe(
+    this.arranchamentoService.salvarAdministrador(this.form.value).subscribe(
       (result) => this.onSuccess(),
       (error) => this.onError
     );
   }
 
   onSuccess() {
-    this.snackBar.open('Militar salvo com sucesso', '', { duration: 5000 });
+    this.snackBar.open('Administrador salvo com sucesso', '', { duration: 5000 });
   }
 
   resetPage() {
@@ -64,6 +58,6 @@ export class CadastrarAdministradorComponent implements OnInit {
   }
 
   onError() {
-    this.snackBar.open('Erro ao salvar militar', '', { duration: 5000 });
+    this.snackBar.open('Erro ao salvar Administrador', '', { duration: 5000 });
   }
 }

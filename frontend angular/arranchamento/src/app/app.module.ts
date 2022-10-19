@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import '@angular/common/locales/global/pt';
 
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
@@ -26,6 +27,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule } from '@angular/forms';
+import { EscolherRefeicaoComponent } from './arranchamento-individual/escolher-refeicao/escolher-refeicao.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +43,7 @@ import { FormsModule } from '@angular/forms';
     CadastrarAdministradorComponent,
     RelatorioComponent,
     EscalaComponent,
+    EscolherRefeicaoComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,8 +62,14 @@ import { FormsModule } from '@angular/forms';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     FormsModule,
+    MatCheckboxModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide:LOCALE_ID,
+      useValue: 'pt'
+    }
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

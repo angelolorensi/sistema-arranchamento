@@ -39,7 +39,6 @@ export class CadastrarEfetivoComponent implements OnInit {
 
   onSuccess(){
     this.snackBar.open('Militar salvo com sucesso', '', { duration: 5000 })
-
   }
 
   resetPage() {

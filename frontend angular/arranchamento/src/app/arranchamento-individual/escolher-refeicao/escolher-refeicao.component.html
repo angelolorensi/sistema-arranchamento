@@ -1,0 +1,64 @@
+<form [formGroup]="formCheckbox">
+<div class="d-flex">
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData1 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia1">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData2 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia2">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData3 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia3">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData4 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia4">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData5 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia5">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData6 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia6">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+  <mat-card class="card-dia">
+    <mat-toolbar class="toolbar-dia" color="primary">{{minhaData7 | date: 'shortDate'}}</mat-toolbar>
+      <section formGroupName="dia7">
+        <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+        <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+      </section>
+  </mat-card>
+</div>
+</form>
+
+<div class="botao-div">
+  <button mat-raised-button color="primary" (click)="onSubmit()">Arranchar</button>
+</div>
