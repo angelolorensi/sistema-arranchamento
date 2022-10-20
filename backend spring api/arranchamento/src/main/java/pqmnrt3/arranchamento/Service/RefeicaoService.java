@@ -1,6 +1,5 @@
 package pqmnrt3.arranchamento.Service;
 
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,6 @@ public class RefeicaoService {
     }
 
     public Refeicao inserir(Refeicao refeicao) {
-        refeicao.setDataRefeicao(new Date());
         Refeicao newRefeicao = refeicaoRepository.saveAndFlush(refeicao);
         return newRefeicao;
     }
