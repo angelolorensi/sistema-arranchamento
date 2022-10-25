@@ -1,6 +1,6 @@
-import { Administrador } from './../model/Administrador';
+import { Administrador } from '../../model/Administrador';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ArranchamentoService } from './../services/arranchamento.service';
+import { ArranchamentoService } from '../../services/arranchamento.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -15,11 +15,7 @@ export class CadastrarAdministradorComponent implements OnInit {
   form: FormGroup;
 
   efetivo: Observable<Administrador[]>;
-  displayedColumns = [
-    'login',
-    'senha',
-    'cia',
-  ];
+  displayedColumns = ['login', 'senha', 'cia'];
 
   constructor(
     private arranchamentoService: ArranchamentoService,
@@ -46,7 +42,9 @@ export class CadastrarAdministradorComponent implements OnInit {
   }
 
   onSuccess() {
-    this.snackBar.open('Administrador salvo com sucesso', '', { duration: 5000 });
+    this.snackBar.open('Administrador salvo com sucesso', '', {
+      duration: 5000,
+    });
   }
 
   resetPage() {

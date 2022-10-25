@@ -12,24 +12,22 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AdministradorArranchamentoComponent } from './administrador-arranchamento/administrador-arranchamento.component';
-import { AdministradorHomeComponent } from './administrador-home/administrador-home.component';
+import { AdministradorArranchamentoComponent } from './components/administrador-arranchamento/administrador-arranchamento.component';
+import { AdministradorHomeComponent } from './components/administrador-home/administrador-home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ArranchamentoIndividualComponent } from './arranchamento-individual/arranchamento-individual.component';
-import { CadastrarAdministradorComponent } from './cadastrar-administrador/cadastrar-administrador.component';
-import { CadastrarEfetivoComponent } from './cadastrar-efetivo/cadastrar-efetivo.component';
-import { EscalaComponent } from './escala/escala.component';
-import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
-import { RelatorioComponent } from './relatorio/relatorio.component';
-import { VisualizarArranchamentoComponent } from './visualizar-arranchamento/visualizar-arranchamento.component';
+import { ArranchamentoIndividualComponent } from './components/arranchamento-individual/arranchamento-individual.component';
+import { CadastrarAdministradorComponent } from './components/cadastrar-administrador/cadastrar-administrador.component';
+import { CadastrarEfetivoComponent } from './components/cadastrar-efetivo/cadastrar-efetivo.component';
+import { EscalaComponent } from './components/escala/escala.component';
+import { MenuPrincipalComponent } from './components/menu-principal/menu-principal.component';
+import { RelatorioComponent } from './components/relatorio/relatorio.component';
+import { VisualizarArranchamentoComponent } from './components/visualizar-arranchamento/visualizar-arranchamento.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { FormsModule } from '@angular/forms';
-import { EscolherRefeicaoComponent } from './arranchamento-individual/escolher-refeicao/escolher-refeicao.component';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -43,7 +41,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     CadastrarAdministradorComponent,
     RelatorioComponent,
     EscalaComponent,
-    EscolherRefeicaoComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,13 +59,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     FormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
   ],
   providers: [
     {
-      provide:LOCALE_ID,
-      useValue: 'pt'
-    }
+      provide: LOCALE_ID,
+      useValue: 'pt',
+    },
   ],
   bootstrap: [AppComponent],
 })

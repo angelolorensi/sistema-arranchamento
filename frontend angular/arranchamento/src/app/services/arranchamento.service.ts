@@ -2,7 +2,6 @@ import { Refeicao } from './../model/Refeicao';
 import { Militar } from './../model/Militar';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { delay, first } from 'rxjs';
 import { Administrador } from '../model/Administrador';
 
 @Injectable({
