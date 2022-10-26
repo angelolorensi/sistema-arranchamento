@@ -16,11 +16,13 @@ export class ArranchamentoIndividualComponent implements OnInit {
     return data;
   }
 
-  @Output() data1 = this.addDays(0, new Date());
-  @Output() data2 = this.addDays(1, new Date());
-  @Output() data3 = this.addDays(2, new Date());
-  @Output() data4 = this.addDays(3, new Date());
-  @Output() data5 = this.addDays(4, new Date());
-  @Output() data6 = this.addDays(5, new Date());
-  @Output() data7 = this.addDays(6, new Date());
+  nome = 'ANGELO';
+
+  data1 = this.addDays(0, new Date());
+  data2 = this.addDays(1, new Date());
+  data3 = this.addDays(2, new Date());
+  data4 = this.addDays(3, new Date());
+  data5 = this.addDays(4, new Date());
+  data6 = this.addDays(5, new Date());
+  data7 = this.addDays(6, new Date());
 }

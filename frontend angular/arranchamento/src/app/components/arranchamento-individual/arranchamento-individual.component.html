@@ -1,11 +1,98 @@
 <div class="container-main">
   <mat-card class="card-width-toolbar">
     <mat-toolbar class="toolbar" color="primary">
-      <h1 class="titulo-toolbar">Arranchamento Individual</h1>
+      <h1 class="titulo-toolbar">Arranchamento {{nome}} - {{data1 | date : 'shortDate' }}</h1>
     </mat-toolbar>
 
     <div class="container">
-      <mat-card class="card-width-conteudo"></mat-card>
+
+        <table class="conteudo-tabela">
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data1 | date : 'EEEE'}} <br> {{data1 | date : 'shortDate'}} </th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data2 | date : 'EEEE'}} <br> {{data2 | date : 'shortDate'}} </th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data3 | date : 'EEEE'}} <br> {{data3 | date : 'shortDate'}} </th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data4 | date : 'EEEE'}} <br> {{data4 | date : 'shortDate'}} </th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data5 | date : 'EEEE'}} <br> {{data5 | date : 'shortDate'}} </th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data6 | date : 'EEEE'}} <br> {{data6 | date : 'shortDate'}} </th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+          <mat-card class="card-conteudo">
+            <ng-container>
+              <mat-card class="card-conteudo-tabela">
+                <th> {{data7 | date : 'EEEE'}} <br> {{data7 | date : 'shortDate'}}</th>
+              </mat-card>
+              <td class="conteudo-celula">
+                <mat-checkbox color="warn">Café</mat-checkbox>
+                <mat-checkbox color="warn">Almoço</mat-checkbox>
+                <mat-checkbox color="warn">Janta</mat-checkbox>
+              </td>
+            </ng-container>
+          </mat-card>
+        </table>
+
     </div>
 
     <div class="botao-div">
