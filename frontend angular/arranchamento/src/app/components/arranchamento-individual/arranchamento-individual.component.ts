@@ -1,3 +1,5 @@
+import { Militar } from './../../model/Militar';
+import { ArranchamentoService } from './../../services/arranchamento.service';
 import { Component,OnInit, Output } from '@angular/core';
 
 @Component({
@@ -7,7 +9,9 @@ import { Component,OnInit, Output } from '@angular/core';
 })
 export class ArranchamentoIndividualComponent implements OnInit {
 
-  constructor() {}
+  constructor(private service:ArranchamentoService) {
+
+  }
 
   ngOnInit(): void {}
 
@@ -17,6 +21,10 @@ export class ArranchamentoIndividualComponent implements OnInit {
   }
 
   nome = 'ANGELO';
+
+  getNome(id:number){
+    this.service.buscarMilitarPorId(id).subscribe();
+  }
 
   data1 = this.addDays(0, new Date());
   data2 = this.addDays(1, new Date());

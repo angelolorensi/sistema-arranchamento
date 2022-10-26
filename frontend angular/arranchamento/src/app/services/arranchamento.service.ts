@@ -18,6 +18,10 @@ export class ArranchamentoService {
     return this.httpClient.get<Militar[]>(this.APImilitar);
   }
 
+  buscarMilitarPorId(id:number){
+    return this.httpClient.get<Militar>(this.APImilitar + id);
+  }
+
   salvarMilitar(militar: Militar) {
     return this.httpClient.post<Militar>(this.APImilitar, militar);
   }
