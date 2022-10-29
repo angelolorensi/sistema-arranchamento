@@ -1,94 +1,115 @@
 <div class="container-main">
   <mat-card class="card-width-toolbar">
     <mat-toolbar class="toolbar" color="primary">
-      <h1 class="titulo-toolbar">Arranchamento {{nome}} - {{data1 | date : 'shortDate' }}</h1>
+      <h1 class="titulo-toolbar">Arranchamento {{militar?.graduacao}} {{militar?.nomeDeGuerra}} - {{data1 | date : 'shortDate' }}</h1>
     </mat-toolbar>
 
     <div class="container">
 
         <table class="conteudo-tabela">
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
-                <th> {{data1 | date : 'EEEE'}} <br> {{data1 | date : 'shortDate'}} </th>
-              </mat-card>
-              <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
-              </td>
+                  <th> {{data1 | date : 'EEEE'}} <br> {{data1 | date : 'shortDate'}} </th>
+                </mat-card>
+              <form [formGroup]="form1">
+                <td class="conteudo-celula">
+                  <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                  <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                  <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
+                </td>
+              </form>
             </ng-container>
           </mat-card>
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
                 <th> {{data2 | date : 'EEEE'}} <br> {{data2 | date : 'shortDate'}} </th>
               </mat-card>
+            <form [formGroup]="form2">
               <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
               </td>
+              </form>
             </ng-container>
           </mat-card>
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
                 <th> {{data3 | date : 'EEEE'}} <br> {{data3 | date : 'shortDate'}} </th>
               </mat-card>
+              <form [formGroup]="form3">
               <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
               </td>
+              </form>
             </ng-container>
           </mat-card>
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
                 <th> {{data4 | date : 'EEEE'}} <br> {{data4 | date : 'shortDate'}} </th>
               </mat-card>
+              <form [formGroup]="form4">
               <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
               </td>
+              </form>
             </ng-container>
           </mat-card>
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
                 <th> {{data5 | date : 'EEEE'}} <br> {{data5 | date : 'shortDate'}} </th>
               </mat-card>
+              <form [formGroup]="form4">
               <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
               </td>
+              </form>
             </ng-container>
           </mat-card>
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
                 <th> {{data6 | date : 'EEEE'}} <br> {{data6 | date : 'shortDate'}} </th>
               </mat-card>
+              <form [formGroup]="form4">
               <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
               </td>
+              </form>
             </ng-container>
           </mat-card>
+
           <mat-card class="card-conteudo">
             <ng-container>
               <mat-card class="card-conteudo-tabela">
                 <th> {{data7 | date : 'EEEE'}} <br> {{data7 | date : 'shortDate'}}</th>
               </mat-card>
+              <form [formGroup]="form4">
               <td class="conteudo-celula">
-                <mat-checkbox color="warn">Café</mat-checkbox>
-                <mat-checkbox color="warn">Almoço</mat-checkbox>
-                <mat-checkbox color="warn">Janta</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="cafe">Café</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="almoco">Almoço</mat-checkbox>
+                <mat-checkbox color="warn" formControlName="janta">Janta</mat-checkbox>
               </td>
+              </form>
             </ng-container>
           </mat-card>
         </table>
@@ -96,7 +117,7 @@
     </div>
 
     <div class="botao-div">
-      <button class="botao" mat-raised-button color="primary">Arranchar</button>
+      <button class="botao" mat-raised-button color="primary" (click)="onSubmit()">Arranchar</button>
     </div>
   </mat-card>
 </div>
